@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ["Toyota","Subaru","BMW"]
+    let ar = [
+        "Toyota",
+        "Subaru",
+        "BMW"
+    ]
+    let toy = cars[0];
+    cars[3] = "Huyndai"
+    let countOfCars = cars.length
+    cars.push("Kia")
+    console.log(cars[cars.length - 1]);
+    cars.unshift("Ferarri");
+    console.log(cars[0]) //"Ferarri"
+    cars.length;
+    let last = cars.pop() //"Kia"
+    cars.length //5
+    let last = cars.shift()//"Ferarri"
+    cars.length//4
+    let arr = ["Toyota", "Subaru", "BMW"]
+    arr.sort()//["Toyota","Sabaru, "BMW"]
+    let points = [40,100,1,5,25,10]
+    points.sort(function (a,b) {
+        return a - b
+    }) //[1,5,10,25,40,100]
+    points.sort(function (a,b) {
+        return b - a
+    })//[100,40,25,10,5,1]
+</script>
+</body>
+</html>
